@@ -36,3 +36,49 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.NavBar{
+display: flex;
+align-items: center;
+background-color: blue;
+font-size: 50px;
+color: white;
+
+
+
+
+}
+
+
+
+.Links{
+margin-left: 5rem;
+color: white;
+
+
+}
+ 
+
+
+.NavLogo{
+width: 10rem;
+height: auto;
+}
+
+
+
+
+
+
+
+
+
+.NavLinkImg{
+width: 6rem;
+height: auto;
+padding-left: 27rem;
+
+
+}
