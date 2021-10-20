@@ -82,3 +82,42 @@ padding-left: 27rem;
 
 
 }
+
+
+.item{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+border: 1px black solid;
+margin-top: 60px;
+
+
+
+}
+
+
+.ImgProducto{
+width: 250px;
+height: auto;
+
+}
+
+
+.NombreTienda{
+display: flex;
+justify-content: center;
+
+}
+
+
+
+.Categorias{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 250px;
+  
+
+
+}

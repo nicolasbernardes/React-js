@@ -1,15 +1,24 @@
 import React from "react";
 
 
-const Principal = ({Texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore asperiores suscipit voluptatem maiores. Maxime ea vitae ipsum? Nostrum molestias aut atque repudiandae ipsam dolore quasi? Incidunt temporibus tempore reiciendis quos?"}) => {
+const Principal = ({texto="Tienda"}) => {
 
     return(
+        <>
 
-        
-        <p>{Texto ?? 'FAIL'}</p>
+            <div>
+                 <h1 className="NombreTienda">{texto ?? 'FAIL'}</h1>
+            </div>
 
-
+           
+            <div className="Categorias">
+                <h2>Nombre:</h2>
+                <h2>Precio:</h2>
+                <h2>Tipo:</h2>
+            </div>
             
+
+        </>    
     );
 
 

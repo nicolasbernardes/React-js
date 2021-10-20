@@ -1,4 +1,5 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 
 
 
@@ -23,13 +24,15 @@ const Navbar = () => {
             </div>
 
 
-            <div className="NavCart">
-                
-                <a className="NavLinkLogo" href="LinkCart"><img className="NavLinkImg" src="../../../logoCart.jpg" alt="logoCart" /></a>
 
+            <div className="NavCart">
+                <CartWidget/>
             </div>
 
         </div>
+
+
+        
 
 
 
