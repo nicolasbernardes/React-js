@@ -3,7 +3,11 @@ import CartWidget from "./CartWidget";
 
 
 
+
 const Navbar = () => {
+
+    
+
 
     return(
 
@@ -17,7 +21,7 @@ const Navbar = () => {
             
 
             <div className="NavLinks">
-                <a className="Links" href="teste1">Home</a>
+                <a className="Links" href="teste1">Productos</a>
                 <a className="Links" href="teste2">Products</a>
                 <a className="Links" href="teste3">Info</a>
                 <a className="Links" href="teste4">Others</a>

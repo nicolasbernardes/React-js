@@ -5,7 +5,10 @@ import comidas from "../Comidas/Comidas"
 
 
 
+
 const ItemListContainer = () => {
+
+    
 
     const [mercadoria, setMercadoria] = useState ('')
     const [finalizado, setFinalizado] = useState(true)
@@ -20,11 +23,14 @@ const ItemListContainer = () => {
         });
 
         ListaDeProdutos.then((comidas)=>{
+
+
+            
+
             setMercadoria(comidas)
             setFinalizado(false)
-        })
+        });
 
-        
     },[]);
 
     
