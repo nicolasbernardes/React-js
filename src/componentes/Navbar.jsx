@@ -1,6 +1,6 @@
 import React from "react";
 import CartWidget from "./CartWidget";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, /* Link */ } from "react-router-dom";
 
 
 
@@ -9,8 +9,8 @@ const Navbar = () => {
 
     const categories = [
         { id: 'all', address: '/', text: 'TODOS LOS PRODUCTOS' },
-        { id: 'cata', address: '/category/SALADOS', text: 'SALADOS' },
-        { id: 'catb', address: '/category/DULCES', text: 'DULCES' },
+        { id: 'cata', address: '/categoria/SALADOS', text: 'SALADOS' },
+        { id: 'catb', address: '/categoria/DULCES', text: 'DULCES' },
         
     ];
     

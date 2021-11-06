@@ -31,12 +31,12 @@ function App() {
           />
 
           <Route  ///Categorias a y b 
-            path="/category/:cambiosId"
+            path="/categoria/:cambiosId"
             element={<ItemListContainer />}
           />
 
           <Route path="/item/:id" element={<ItemDetailContainer />} /> 
-          {/* prductos details */}
+          
 
 
         </Routes>  

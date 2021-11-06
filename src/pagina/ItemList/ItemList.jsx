@@ -9,7 +9,7 @@ const ItemList = ({ mercadoria }) => {
 
         <>
             <div className="ApresetacionProducto">
-                {mercadoria.map((producto) => (  
+                {mercadoria?.map((producto) => (  
 
                     <Item
 

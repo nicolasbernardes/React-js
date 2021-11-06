@@ -1,5 +1,5 @@
-/* import React, { useState, useEffect } from 'react';
-import  ItemDetail  from './ItemDetail/ItemDetail'
+import React, { useState, useEffect } from 'react';
+import ItemDetail from '../ItemDetail/ItemDetail'
 import comidas from '../../Comidas/Comidas';
 import { useParams } from 'react-router-dom';
 
@@ -22,10 +22,10 @@ const ItemDetailContainer = () => {
       })
       .finally(() => setCarregar(false));
       
-  }, [id]);
+  }, [ id ]);
 
   return carregar ? <h3>Cargando...</h3> : <ItemDetail {...detail} />;
 };
 
 
-export default ItemDetailContainer; */
+export default ItemDetailContainer; 

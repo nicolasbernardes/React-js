@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 
 
-const Item =({nombre, precio,id,tipo,imagen,category})=>{
+const Item =({id,nombre, precio,tipo,imagen,category})=>{
     return(
-        <Link to={`/item/${id}`}>
+        <Link to={`/item/${id}`}>  
 
             <div className={`item ${category}-category`}>
                 <h3 className="CategoriaProducto">{category}</h3>

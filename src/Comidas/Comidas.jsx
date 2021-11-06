@@ -60,7 +60,8 @@ const comidas = [
         tipo:'dulce',
         imagen:'/images/foto6.webp',
         texto:'Afajores de chocolate o gusto a elecion, 1 persona puede comer'
-    }
+    },
+      
 
 ]
 
