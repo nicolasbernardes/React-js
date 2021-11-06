@@ -8,15 +8,15 @@ const ItemList = ({ mercadoria }) => {
     return (
 
         <>
+            <div className="ApresetacionProducto">
+                {mercadoria.map((producto) => (  
 
-            {mercadoria.map((producto) => (  
+                    <Item
 
-                <Item
+                    Key={producto.id} nombre={producto.nombre} precio={producto.precio} tipo={producto.tipo} imagen={producto.imagen} />
 
-                Key={producto.id} nombre={producto.nombre} precio={producto.precio} tipo={producto.tipo} imagen={producto.imagen} />
-
-            ))}
-
+                ))}
+            </div>
         </>
 
    );

@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+/* import React, { useState, useEffect } from 'react';
 import  ItemDetail  from './ItemDetail/ItemDetail'
-import { comidas } from '../Comidas/Comidas'
+import comidas from '../../Comidas/Comidas';
 import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
@@ -28,4 +28,4 @@ const ItemDetailContainer = () => {
 };
 
 
-export default ItemDetailContainer;
+export default ItemDetailContainer; */

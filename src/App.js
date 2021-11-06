@@ -3,8 +3,8 @@ import './App.css';
 import Home from './pagina/Home';
 import ItemListContainer from './pagina/ItemListContainer';
 import Principal from './componentes/Principal';
-import {BrowserRouter, Routes, Route, /* Redirect */ } from 'react-router-dom'
-import { ItemDetailContainer } from './pagina/ItemDetailContainer/ItemDetailContainer'
+import {BrowserRouter, Routes, Route, /* Redirect */ } from 'react-router-dom';
+import ItemDetailContainer from './pagina/ItemDetailContainer/ItemDetailContainer';
 
 
 function App() {
