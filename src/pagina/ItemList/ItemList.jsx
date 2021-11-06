@@ -1,20 +1,26 @@
 import React from "react";
-import comidas from "../../Comidas/Comidas";
-import Item from "../Item/Item";
+import Item from "../Item/Item";    
 
 
 
+const ItemList = ({ mercadoria }) => {   
 
-const ItemList =()=>{
-    return(
+    return (
+
         <>
-            {comidas.map((producto)=>
-                <Item Key={producto.id} nombre={producto.nombre} precio={producto.precio} tipo={producto.tipo} imagen={producto.imagen}/>
-            )}
+
+            {mercadoria.map((producto) => (  
+
+                <Item
+
+                Key={producto.id} nombre={producto.nombre} precio={producto.precio} tipo={producto.tipo} imagen={producto.imagen} />
+
+            ))}
 
         </>
-    )
-}
 
+   );
 
-export default ItemList;
+};
+
+export default ItemList
