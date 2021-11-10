@@ -1,6 +1,6 @@
 # Recetas Nat 
 
-<img src="..public/NicolasApp.gif">
+<img src="./public/NicolasApp.gif">
 
 
 
