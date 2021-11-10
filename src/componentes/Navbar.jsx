@@ -1,6 +1,6 @@
 import React from "react";
 import CartWidget from "./CartWidget";
-import { NavLink, /* Link */ } from "react-router-dom";
+import { NavLink,  /* Link */  } from "react-router-dom";
 
 
 
@@ -16,16 +16,23 @@ const Navbar = () => {
     
 
 
+
     return(
             
         <div className="NavBar">
+
+
+
+
             
             <div>
+
                 
                 <img className="NavLogo" src="../../../logoAPP.png" alt="logo" />
-
-            </div>
-            
+                 
+                  
+            </div> 
+                
 
             {categories.map((cat) => {
                 return (

@@ -13,7 +13,7 @@ const ItemList = ({ mercadoria }) => {
 
                     <Item
 
-                    Key={producto.id} nombre={producto.nombre} precio={producto.precio} tipo={producto.tipo} imagen={producto.imagen} />
+                    key={producto.id} nombre={producto.nombre} precio={producto.precio} tipo={producto.tipo} imagen={producto.imagen} id={producto.id} category={producto.category}/>
 
                 ))}
             </div>

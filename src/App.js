@@ -21,13 +21,13 @@ function App() {
           
         <Routes>  
 
-          <Principal/>
+          
 
             
 
           <Route  ///TODOS LOS PRODUCTOS
             path="/"
-            element={<ItemListContainer />}
+            element={ <>  <Principal /> <ItemListContainer /> </>}
           />
 
           <Route  ///Categorias a y b 
