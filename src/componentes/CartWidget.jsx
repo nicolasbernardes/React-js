@@ -1,15 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 
 const CartWidget =()=>{
+    
+
     return(
 
+        <>
         
-                    
-        <a className="NavLinkLogo" href="LinkCart"><img className="NavLinkImg" src="../../../logoCart.jpg" alt="logoCart" /></a>
-
+            <Link className="NavLinkLogo" to="/cart">
+                <img className="NavLinkImg" src="../../../logoCart.jpg" alt="logoCart" />
+            </Link>     
+          
+          
         
-
+        </>
     );
 };
 

@@ -42,7 +42,7 @@
 .NavBar{
 display: flex;
 align-items: center;
-background-color: blue;
+background-color: rgb(7, 237, 233);
 font-size: 50px;
 color: white;
 
@@ -127,4 +127,79 @@ justify-content: center;
   padding-left: 60px;
   font-size: 50px;
  
+}
+
+
+
+.NombreDetail{
+  display: flex;
+  justify-content: center;
+}
+
+.ImgDetail{
+  
+  margin-left: 33rem;
+}
+
+.TextoDetail{
+  display: flex;
+  justify-content: center;
+  
+}
+.PrecioDetail{
+  display: flex;
+  justify-content: center;
+}
+
+.ButtonResta{
+  display: flex;
+  font-size: 50px;
+  margin-bottom: 800px;
+  margin-left: 50rem;
+}
+
+.TextoUnidades{
+display: flex;
+font-size: 30px;
+margin-top: -850px;
+margin-left: 55rem;
+}
+.ButtonSuma{
+  display: flex;
+  font-size: 50px;
+  margin-top: -82px;
+  margin-left: 59rem;
+}
+
+.TextoStock{
+  font-size: 50px;
+  margin-top: -65px;
+}
+
+.ButtonFinal{
+  font-size: 30px;
+  margin-left: 47rem;
+  margin-bottom: 80px;
+}
+
+.ButtonDetail{
+  font-size: 30px;
+  margin-left: 47rem;
+  margin-bottom: 80px;
+}
+
+.DivCarrito{
+  border: 1px solid black;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 780px;
+  margin-bottom: 50px;
+}
+
+.TextoCarrito{
+  display: flex;
+  justify-content: center;
+  
 }

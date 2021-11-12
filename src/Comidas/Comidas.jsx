@@ -6,7 +6,8 @@ const comidas = [
         precio:'500$',
         tipo:'dulce',
         imagen:'/images/foto1.webp',
-        texto:'Budin de pera muy bueno 4 personas pueden comer'
+        texto:'Budin de pera muy bueno 4 personas pueden comer',
+        stock:'10'
     },
 
     {
@@ -16,7 +17,8 @@ const comidas = [
         precio:'400$',
         tipo:'salado',
         imagen:'/images/foto2.webp',
-        texto:'scones de queso 3 personas pueden comer, o hasta 4 personas  '
+        texto:'scones de queso 3 personas pueden comer, o hasta 4 personas  ',
+        stock:'10'
     },
 
 
@@ -27,7 +29,8 @@ const comidas = [
         precio:'200$',
         tipo:'dulce',
         imagen:'/images/foto3.webp',
-        texto:'Brigadeiros de chocolate rico, son muy comunes en fiestas de cumpleaños, hasta 15 personas pueden comer'
+        texto:'Brigadeiros de chocolate rico, son muy comunes en fiestas de cumpleaños, hasta 15 personas pueden comer',
+        stock:'10'
     },
 
 
@@ -38,7 +41,8 @@ const comidas = [
         precio:'300$',
         tipo:'salado',
         imagen:'/images/foto4.webp',
-        texto:'Empanadas de carne , pollo y jamon y queso 7 personas pueden comer '
+        texto:'Empanadas de carne , pollo y jamon y queso 7 personas pueden comer ',
+        stock:'10'
     },
 
 
@@ -49,7 +53,8 @@ const comidas = [
         precio:'100$',
         tipo:'salado',
         imagen:'/images/foto5.webp',
-        texto:'Galleta avena, hasta 5 personas pueden comer'
+        texto:'Galleta avena, hasta 5 personas pueden comer',
+        stock:'10'
     },
 
     {
@@ -59,7 +64,8 @@ const comidas = [
         precio:'50$',
         tipo:'dulce',
         imagen:'/images/foto6.webp',
-        texto:'Afajores de chocolate o gusto a elecion, 1 persona puede comer'
+        texto:'Afajores de chocolate o gusto a elecion, 1 persona puede comer',
+        stock:'10'
     },
       
 
