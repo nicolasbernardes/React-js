@@ -11,7 +11,7 @@ const Item =({id,nombre, precio,tipo,imagen,category})=>{
             <div className={`item ${category}-category`}>
                 <h3 className="CategoriaProducto">{category}</h3>
                 <h3 className="NombreProducto">{nombre}</h3>
-                <h3 className="PrecioProducto">{precio}</h3>
+                <h3 className="PrecioProducto">${precio}</h3>
                 <h3 className="TipoProducto">{tipo}</h3>
                 <img className="ImgProducto" src={imagen} alt={nombre}/>
             </div>

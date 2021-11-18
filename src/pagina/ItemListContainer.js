@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from "react";
 import ItemList from "./ItemList/ItemList";
-import comidas from "../Comidas/Comidas"
 import { useParams, /* useHistory */ } from "react-router-dom";
+
+import db from "../firebase/firebase";
+import { collection, query, where, getDocs } from 'firebase/firestore';
 
 
 
@@ -17,22 +19,32 @@ const ItemListContainer = () => {
     const {cambiosId} = useParams();
 
     useEffect( () => {
+
         setFinalizado(true);
-        const ListaDeProdutos= new Promise((resultado)=>{
-            setTimeout(()=>{
-                resultado(comidas)
-            },1000);
+
+        
+
+
+        const misItems = cambiosId 
+            
+        ? query (collection(db, 'produtos'), where('category', '==', cambiosId) )
+        :
+        collection(db, 'produtos');
+
+
+        getDocs(misItems).then((res) => {
+
+        const results = res.docs.map( (doc) => {
+          return {...doc.data(), id: doc.id };
+        });
+
+
+        setMercadoria(results);
+
+        }).finally( () => setFinalizado(false));
 
             
-        });
-
-        ListaDeProdutos.then((comidas)=>{
-            cambiosId ? setMercadoria(comidas.filter(i => i.category === cambiosId))
-                
-
-            :setMercadoria(comidas)
-            setFinalizado(false)
-        });
+        
 
 
     },[cambiosId]);
@@ -42,11 +54,18 @@ const ItemListContainer = () => {
     return(
         <>
 
-            
-
             <div>
-                {finalizado ? <h2>Cargando....</h2> : <ItemList mercadoria={mercadoria}/>}
+                {finalizado ? 
+                
+            <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+            </div>                               
+            
+            : <ItemList mercadoria={mercadoria}/>}
             </div>
+
             
             
 

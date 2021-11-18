@@ -23,7 +23,7 @@ const ItemDetail = ({ id, nombre, imagen, precio, texto, stock }) => {
           <>
             <h1 className="NombreDetail">{nombre}</h1>
             <img className="ImgDetail" src={imagen} alt={nombre} />
-            <h2 className="PrecioDetail"> {precio}</h2>
+            <h2 className="PrecioDetail">${precio}</h2>
             <h2 className="TextoDetail">{texto}</h2> 
             {!compro? <ItemCount stock={stock} onAdd={adicionar} /> : <Link to='/cart'><button className="ButtonDetail">terminar la compra</button></Link>}
           </>

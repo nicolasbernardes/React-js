@@ -1,26 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail'
-import comidas from '../../Comidas/Comidas';
 import { useParams } from 'react-router-dom';
+
+import db from '../../firebase/firebase';
+import { doc, getDoc } from 'firebase/firestore';
 
 const ItemDetailContainer = () => {
   const [detail, setDetail] = useState({});
   const [carregar, setCarregar] = useState(true);
+
   const { id } = useParams();
 
   useEffect(() => {
     setCarregar(true);
-    const todosItens = new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(comidas);
-      }, 1000);
-    });
-
     
-    todosItens.then((comidas) => {
-        setDetail(comidas.find((i) => i.id === id));
-      })
-      .finally(() => setCarregar(false));
+
+    const myItem = doc(db, 'produtos', id)
+
+    getDoc(myItem).then((res) => {
+      const result = { id: res.id, ...res.data() };
+      setDetail(result);
+
+    })
+    .finally( () =>{
+
+      setCarregar(false);
+
+    });
+      
       
   }, [ id ]);
 

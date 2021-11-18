@@ -9,7 +9,7 @@
 
 # Dulces
 
-## En la parte de los dulces tenemos: Budin , Brigadeiros Y Alfajores 
+## En la parte de los dulces tenemos: Budin , Brigadeiros, Muffins vainilla, Galletita Manteca Y Alfajores
 
 # Salados 
 
