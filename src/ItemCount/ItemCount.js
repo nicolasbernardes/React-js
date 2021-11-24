@@ -46,7 +46,7 @@ return(
         </div>
         
         <div>
-            <button className="ButtonFinal" onClick={()=>props.onAdd ({unidades})}>comprar no carrinho</button>
+            <button className="ButtonFinal" onClick={()=>props.onAdd ({unidades})}>comprar no carito</button>
         </div>
 
 

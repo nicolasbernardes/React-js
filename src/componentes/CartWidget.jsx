@@ -1,23 +1,30 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Link } from "react-router-dom";
+import { Contexto } from "./CartContext";
 
 
 
 const CartWidget =()=>{
     
+    const {unidades} = useContext(Contexto)
 
-    return(
+        return(
 
-        <>
-        
-            <Link className="NavLinkLogo" to="/cart">
-                <img className="NavLinkImg" src="../../../logoCart.jpg" alt="logoCart" />
-            </Link>     
-          
-          
-        
-        </>
-    );
+
+
+            unidades > 0 && (
+
+
+                <Link className="NavLinkLogo" to="/cart">
+                    <img className="NavLinkImg" src="../../../logoCart.jpg" alt="logoCart" />
+
+                    <p className="NumberCart">{unidades}</p>
+                </Link>     
+            
+            )
+            
+            
+        );
 };
 
 export default CartWidget;
