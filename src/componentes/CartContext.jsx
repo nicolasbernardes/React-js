@@ -36,9 +36,9 @@ const CartContext = ({ children }) =>{
     }
 
     
-    const Remover = (id) =>{
+    const remove = (id) =>{
 
-        const MeusItens = carrito.find ((item => item.id !==id));
+        const MeusItens = carrito.find ((item => item.id === id));
 
         const CarritoFilter = carrito.filter((item) => item.id !==id);
 
@@ -56,7 +56,7 @@ const CartContext = ({ children }) =>{
 
     };
     
-    return <Contexto.Provider value={{carrito, unidades, tudo, onAdd, Remover}}>
+    return <Contexto.Provider value={{carrito, unidades, tudo, onAdd, remove}}>
         {children}
     </Contexto.Provider>
 

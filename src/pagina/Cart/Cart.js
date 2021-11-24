@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 const Cart = ()=>{
-    const {carrito, tudo, unidades,Remover} = useContext(Contexto);
+    const {carrito, tudo, unidades,remove} = useContext(Contexto);
 
     return unidades > 0 ? (
         <>
@@ -18,7 +18,7 @@ const Cart = ()=>{
                 <h2>precio:${item.precio}</h2>
                 <h2>cantidad:{item.cantidad}</h2>
                 <h2>subtotal:${item.subtotal}</h2>
-                <button onClick={() => Remover (item.id)}>X</button>
+                <button onClick={() => remove (item.id)}>X</button>
             </div>
 
             );
