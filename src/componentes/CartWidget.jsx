@@ -16,7 +16,7 @@ const CartWidget =()=>{
 
 
                 <Link className="NavLinkLogo" to="/cart">
-                    <img className="NavLinkImg" src="../../../logoCart.jpg" alt="logoCart" />
+                    <img className="NavLinkImg" src="../../../teste.jpg" alt="" />
 
                     <p className="NumberCart">{unidades}</p>
                 </Link>     

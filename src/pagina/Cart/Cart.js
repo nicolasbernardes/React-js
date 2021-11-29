@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import { Contexto } from "../../componentes/CartContext";
 import { Link } from 'react-router-dom'
+import Links from "../../componentes/Links";
 
 
 const Cart = ()=>{
@@ -8,19 +9,25 @@ const Cart = ()=>{
 
     return unidades > 0 ? (
         <>
+       
+        <Links/>
+
+        {/* <button onClick={confirmar}>Comprar</button> */}
         <h1  className="TextoCarrito">El total del carrito es {tudo} y tenes {unidades} unidades</h1>
         {carrito.map( (item) => {
 
             return(
+            <>        
+                <div className="DivCarrito">
+                    <h2>nombre:{item.nombre}</h2>
+                    <h2>precio:${item.precio}</h2>
+                    <h2>cantidad:{item.cantidad}</h2>
+                    <h2>subtotal:${item.subtotal}</h2>
+                    <button onClick={() => remove (item.id)}>X</button>
+                </div>
 
-            <div className="DivCarrito">
-                <h2>nombre:{item.nombre}</h2>
-                <h2>precio:${item.precio}</h2>
-                <h2>cantidad:{item.cantidad}</h2>
-                <h2>subtotal:${item.subtotal}</h2>
-                <button onClick={() => remove (item.id)}>X</button>
-            </div>
-
+                
+            </>    
             );
 
             

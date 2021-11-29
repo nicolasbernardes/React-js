@@ -31,7 +31,16 @@ const ItemDetailContainer = () => {
       
   }, [ id ]);
 
-  return carregar ? <h3>Cargando...</h3> : <ItemDetail {...detail} />;
+  return carregar ?  
+
+  <div class="spinner">                 
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div> 
+
+
+: <ItemDetail {...detail} />;
 };
 
 

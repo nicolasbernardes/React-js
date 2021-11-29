@@ -38,25 +38,31 @@ const CartContext = ({ children }) =>{
     
     const remove = (id) =>{
 
-        const MeusItens = carrito.find ((item => item.id === id));
+        const meusitens = carrito.find ((item => item.id === id));
 
         const CarritoFilter = carrito.filter((item) => item.id !==id);
 
         setCarrito(CarritoFilter);
 
 
-        setUnidades(unidades - MeusItens.cantidad);
+        setUnidades(unidades - meusitens.cantidad);
 
 
-        setTudo(tudo - MeusItens.subtotal);
+        setTudo(tudo - meusitens.subtotal);
 
 
         
 
 
     };
+
+
+    const confirmar = () =>{
+
+
+    }
     
-    return <Contexto.Provider value={{carrito, unidades, tudo, onAdd, remove}}>
+    return <Contexto.Provider value={{carrito, unidades, tudo, onAdd, remove, confirmar }}>
         {children}
     </Contexto.Provider>
 
