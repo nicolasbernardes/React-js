@@ -1,18 +1,50 @@
 import React, {useContext} from "react";
 import { Contexto } from "../../componentes/CartContext";
 import { Link } from 'react-router-dom'
-import Links from "../../componentes/Links";
+import { Welcome } from "../../componentes/Welcome";
+import swal from 'sweetalert';
 
 
-const Cart = ()=>{
+
+
+const Cart = () =>{
+
+    const mostrarAlerta = () =>{
+        swal({
+            title:"Comprar",
+            text:"Desea finalizar su compra?",
+            icon:"warning",
+            buttons:["No","Si"]
+
+
+
+
+        }).then(resposta =>{
+            if(resposta){
+                
+                swal({
+                    
+                    title:"La compra fue realizada",
+                    
+                    icon:"success"})
+            }
+        })
+            
+           
+    }
+    
+
     const {carrito, tudo, unidades,remove} = useContext(Contexto);
+    
 
     return unidades > 0 ? (
         <>
        
-        <Links/>
+        <Welcome/>
 
-        {/* <button onClick={confirmar}>Comprar</button> */}
+      <button onClick={()=>mostrarAlerta()} className="buttonCompra">comprar</button>
+
+        
         <h1  className="TextoCarrito">El total del carrito es {tudo} y tenes {unidades} unidades</h1>
         {carrito.map( (item) => {
 
@@ -35,7 +67,7 @@ const Cart = ()=>{
         })}
 
         </>
-
+            
     ) : (
 
         <>

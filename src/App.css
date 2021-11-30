@@ -155,7 +155,7 @@ justify-content: center;
 .ButtonResta{
   display: flex;
   font-size: 50px;
-  margin-bottom: 792px;
+  margin-bottom: 797px;
   margin-left: 50rem;
 }
 
@@ -202,7 +202,7 @@ margin-left: 55rem;
 .TextoCarrito{
   display: flex;
   justify-content: center;
-  
+  margin-top: -10px;
 }
 
 /* cargando */
@@ -273,4 +273,26 @@ margin-left: 55rem;
   display: flex;
   justify-content: center;
   font-size: 50px;
+}
+
+
+
+.formularioResposta{
+  border: 1px solid black;
+  width: 200px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.formularioPergunta{
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+.buttonCompra{
+  font-size: 50px;
+  transform: translate(1350px, 20px);
 }

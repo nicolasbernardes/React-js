@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-import 'bootswatch/dist/superhero/bootstrap.min.css'
+
 
 ReactDOM.render(
   <React.StrictMode>

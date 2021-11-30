@@ -1,4 +1,4 @@
-/* import logo from './logo.svg'; */
+
 import './App.css';
 import Home from './pagina/Home';
 import ItemListContainer from './pagina/ItemListContainer';
@@ -7,8 +7,8 @@ import {BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemDetailContainer from './pagina/ItemDetailContainer/ItemDetailContainer';
 import { CartContext } from './componentes/CartContext'
 import Cart from './pagina/Cart/Cart';
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css';
+
+
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
 
           <Home/>
 
-          <ToastContainer/>
+          
             
           <Routes>  
 

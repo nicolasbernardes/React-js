@@ -57,12 +57,9 @@ const CartContext = ({ children }) =>{
     };
 
 
-    const confirmar = () =>{
 
-
-    }
     
-    return <Contexto.Provider value={{carrito, unidades, tudo, onAdd, remove, confirmar }}>
+    return <Contexto.Provider value={{carrito, unidades, tudo, onAdd, remove }}>
         {children}
     </Contexto.Provider>
 

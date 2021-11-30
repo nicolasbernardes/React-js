@@ -9,7 +9,7 @@ const handleStock={
 
     sumastock:()=>{
       if(cantidad===0){
-        alert('No tengo mas deste producto')
+        alert('No tengo más deste producto')
       } else {
           setUnidades(unidades+1)
           setCantidad(cantidad-1)
@@ -20,7 +20,7 @@ const handleStock={
     restaStock:()=>{
 
         if(unidades===0){
-          alert('no podes menos de 0')
+          alert('No podes menos de 0')
         } else {
             setUnidades(unidades-1)
             setCantidad(cantidad+1)
@@ -42,11 +42,11 @@ return(
         </div>
 
         <div>
-            <p className="TextoStock">Stock disponible: {cantidad}</p>
+            <p className="TextoStock">Stock disponible:{cantidad}</p>
         </div>
         
         <div>
-            <button className="ButtonFinal" onClick={()=>props.onAdd ({unidades})}>comprar no carito</button>
+            <button className="ButtonFinal" onClick={()=>props.onAdd ({unidades})}>Comprar no carito</button>
         </div>
 
 

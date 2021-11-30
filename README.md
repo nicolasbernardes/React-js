@@ -1,6 +1,6 @@
 # Recetas Nat 
 
-<img src="./public/NicolasApp.gif">
+<img src="./public/NicolasFinal.gif">
 
 
 
@@ -14,3 +14,7 @@
 # Salados 
 
 ## La parte de los Salados tenemos: Scones de queso, Empanadas de carne, jamon y queso, pollo etc , y Galleta avena
+
+# Formulario
+
+## Debe preencher un formulario con sus informaciones al final de la compra. Nombre y Apellido, Email y numero de teléfono 
